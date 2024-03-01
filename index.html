@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Lib APP</title>
+<link rel="stylesheet" href="searchMenu.html">
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+
+       <div>        
+        <p id="headline" style="font-size: 200px;">RecipeLib</p> </div>
+          <div class="btn1">
+            <input  type="text" id="btn1" class="btn1" placeholder="Search for food..."> <br><br>
+            <button id="btn2" onclick="search()">Search</button>
+        </div>
+    
+        <script>
+            
+    
+        function search() {
+            var searchTerm = document.getElementById("btn1").value.toLowerCase();
+            if (searchTerm === "paneer") {
+                window.location.href = "searchMenu.html"; 
+            } else {
+                alert("Sorry, no results found for '" + searchTerm + "'.");
+            }
+        }
+    </script> 
+</body>
+</html>
